@@ -4,14 +4,15 @@ A collection of evolving definitions of a universal user entity.
 
 ## Index
 1. [Models](#models)
-    *. [User Account Type](#user-account-type)
-    *. [User Role](#user-role)
-    *. [User Account Type](#user-account-type)
-    *. [User Account Type](#user-account-type)
-    *. [User Account Type](#user-account-type)
-    *. [User Account Type](#user-account-type)
-    *. [User Account Type](#user-account-type)
-    *. [User Account Type](#user-account-type)
+    * [User Account Type](#user-account-type)
+    * [User Role](#user-role)
+    * [User Account Type](#user-account-type)
+    * [User Account Type](#user-account-type)
+    * [User Account Type](#user-account-type)
+    * [User Account Type](#user-account-type)
+    * [User Account Type](#user-account-type)
+    * [User Account Type](#user-account-type)
+
 
 ## Models
 
