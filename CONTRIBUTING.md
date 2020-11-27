@@ -6,7 +6,7 @@ Some example contributions might be:
 * adding new/refining existing entity definitions
 * writing usage tutorials
 
-All contributors are expected to follow the Code of Conduct found [here](https://github.com/burtawicz/universal-user-schema/CODE_OF_CONDUCT). 
+All contributors are expected to follow the Code of Conduct found [here](https://github.com/burtawicz/universal-user-schema/blob/master/CODE_OF_CONDUCT.md). 
 
 ## Contributing Process
 To contribute to this project:
