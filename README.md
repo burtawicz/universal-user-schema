@@ -1,6 +1,15 @@
 # Universal User Schema
 
-A collection of evolving definitions of a universal user entity.
+
+## What is this?
+A collection of evolving definitions that describe a generic and reusable user schema for systems that require authentication and authorization.
+
+
+## Why does this exist?
+Over the course of my career I've built and worked on a significant number of systems spread across a variety of industries that require user authentication. While each system may be unique in architecture and in purpose, the user authentication and authorization aspects have only minor variations.
+
+In short, I'm tired of repeatedly building the same thing. So to save myself (and hopefully others) time, I've generified it for easy reuse.
+
 
 ## Index
 1. [Models](#models)
@@ -13,7 +22,8 @@ A collection of evolving definitions of a universal user entity.
     * [User Identity](#user-identity)
     * [User Credential](#user-credential)
     * [User Login](#user-login)
-
+1. [Contributing](#contributing)
+1. [License](#license)
 
 ## Models
 
@@ -46,3 +56,11 @@ Represents a set of credentials that the user will authenticate themselves with.
 
 ### User Login
 Represents a login attempt by a user.
+
+
+## Contributing
+If you're interested in contributing to this project, please read through the contribution guide found [here](https://github.com/burtawicz/universal-user-schema/contributing).
+
+## License
+This project is licensed under the [MIT license](https://github.com/burtawicz/universal-user-schema/license). 
+
