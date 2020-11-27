@@ -4,6 +4,7 @@ create schema user_s;
 create extension if not exists "uuid-ossp";
 
 -- create 'generate_edited_at_on_update()' function for the schema
+-- this function sets the 'edited_at' column to the current time upon update
 create or replace function user_s.generate_edited_at_on_update()
     returns trigger as
 $$
@@ -89,6 +90,8 @@ create trigger user_account_set_timestamp_trig
 execute procedure user_s.generate_edited_at_on_update();
 
 
+-- create user_activiation_token table
+-- represents a single activation token 
 create table user_s.user_activation_token
 (
     id           serial    not null primary key,
@@ -99,6 +102,14 @@ create table user_s.user_activation_token
     edited_at    timestamp not null default now(),
     deleted_at   timestamp
 );
+
+-- create trigger on user_activation_token table to execute the 'generate_edited_at_on_update()' function
+create trigger user_activation_token_set_timestamp_trig
+    before update
+    on user_s.user_activation_token
+    for each row
+execute procedure user_s.generate_edited_at_on_update();
+
 
 -- create user_profile table
 -- represents all of the data associated with a user
@@ -128,7 +139,7 @@ create type user_s.user_credential_type as enum ('EMAIL', 'PHONE', 'USERNAME', '
 
 
 -- create user_credential table
--- represents a set of credentials associated with a user account
+-- represents a single set of credentials associated with a user account
 create table user_s.user_credential
 (
     id                serial                      not null primary key,
@@ -149,7 +160,6 @@ create trigger user_credential_set_timestamp_trig
     on user_s.user_credential
     for each row
 execute procedure user_s.generate_edited_at_on_update();
-
 
 
 -- create user_identity_provider table
@@ -196,4 +206,22 @@ create trigger user_identity_set_timestamp_trig
     for each row
 execute procedure user_s.generate_edited_at_on_update();
 
+
+-- create user_login table
+-- represents a single login attempt
+create table user_s.user_login (
+    id              serial       not null primary key,
+    credential_used text         not null,
+    details         json,
+    created_at      timestamp    not null default now(),
+    edited_at       timestamp    not null default now(),
+    deleted_at      timestamp
+);
+
+-- create trigger on user_login table to execute the 'generate_edited_at_on_update()' function
+create trigger user_login_set_timestamp_trig
+    before update
+    on user_s.user_login
+    for each row
+execute procedure user_s.generate_edited_at_on_update();
 
