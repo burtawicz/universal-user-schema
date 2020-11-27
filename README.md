@@ -59,8 +59,8 @@ Represents a login attempt by a user.
 
 
 ## Contributing
-If you're interested in contributing to this project, please read through the contribution guide found [here](https://github.com/burtawicz/universal-user-schema/contributing).
+If you're interested in contributing to this project, please read through the contribution guide found [here](https://github.com/burtawicz/universal-user-schema/blob/master/CONTRIBUTING.md).
 
 ## License
-This project is licensed under the [MIT license](https://github.com/burtawicz/universal-user-schema/license). 
+This project is licensed under the [MIT license](https://github.com/burtawicz/universal-user-schema/blob/master/LICENSE.txt). 
 
