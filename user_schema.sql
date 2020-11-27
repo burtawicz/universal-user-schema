@@ -104,7 +104,7 @@ create table user_s.user_activation_token
 -- represents all of the data associated with a user
 create table user_s.user_profile
 (
-    id                 serial       not null primary key
+    id                 int       not null primary key
         constraint user_profile_user_account_id_fk references user_s.user_account (id),
     first_name         varchar(255) not null,
     last_name          varchar(255) not null,
