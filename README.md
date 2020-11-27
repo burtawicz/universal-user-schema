@@ -6,12 +6,13 @@ A collection of evolving definitions of a universal user entity.
 1. [Models](#models)
     * [User Account Type](#user-account-type)
     * [User Role](#user-role)
-    * [User Account Type](#user-account-type)
-    * [User Account Type](#user-account-type)
-    * [User Account Type](#user-account-type)
-    * [User Account Type](#user-account-type)
-    * [User Account Type](#user-account-type)
-    * [User Account Type](#user-account-type)
+    * [User Account](#user-account)
+    * [User Profile](#user-profile)
+    * [User Activation Token](#user-activation-token)
+    * [User Identity Provider](#user-indentity-provider)
+    * [User Identity](#user-identity)
+    * [User Credential](#user-credential)
+    * [User Login](#user-login)
 
 
 ## Models
